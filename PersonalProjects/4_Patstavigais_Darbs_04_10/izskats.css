@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    width: 600px;
+}
+
+ #pazinojums1{
+    background-color: rgb(255, 255, 120);
+    margin: 0 0 50px 0;
+}
+
+#pazinojums2{
+    background-color: aqua;
+    text-align: center;
+    border-style: dotted;
+    margin: 0 0 50px 0;
+}
+
+#pazinojums3{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 5px 30px;
+    border-radius: 8px;
+    
+}
+
+#pazinojums4{
+    background-color: lightskyblue;
+}
+
+#pazinojums5{
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    margin : 30px 30px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pazinojums6{
+    background-color: red;
+    color: #fff;
+
+}

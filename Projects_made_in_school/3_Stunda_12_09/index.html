@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formas</title>
+    <meta name="keywords" content="Mācos HTML, HTML formas, HTML head elementi"> <!-- atslēgas vārdi priekš meklētājprogrammam -->
+    <meta name="description" content="Apraksts par šo lapu">
+    <meta name="author" content="SIA WEB-LAPAS">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/225/823/png-transparent-logo-html-computer-icons-symbol-miscellaneous-angle-text.png" type="image/x-icon"> <!-- mājaslapas augšpusē parāda mājaslapas ikonu -->
+</head>
+<body style="font-family: Calibri; background:  lightgray;">
+    
+    <h1 style="text-align:center;">HTML Formas</h1>
+    <hr>
+    <form action="" method="post">
+        <fieldset> <!-- fieldset: ierāme visu -->
+            <legend style="text-align: center; font-size: 21px;">Pieteikuma forma</legend> <!-- +- rāmi ieliek "Pieteikuma forma" -->
+        <p>Lietotājvārds:
+            <input type="text" name="lietotājvārds" maxlength="15" placeholder="Ievadi lietotājvārdu" autofocus required>   <!--   type: teksta tips   ;   name: datu vards, katru vajag definet  ;   max length: cik var ierakstit   ;   value: vertiba kas jau ir ierakstita ieksa, bet labak ir izmantot "placeholder", jo tad vins aiziet backgrounda  ;  autofocus: kad atver majaslapu, tad automatiski ieiet ievades lauka  ;  required: obligati jāievada kautkas  -->
+            <input type="text" name="domain" value="@manalapa.lv" size="12" disabled>   <!-- size: var notiekt cik simboli var iet ieksa  ;   readonly: nelauj neko rakstit, tikai var redzet, bet var ari izmantot "disabled"  -->
+        </p>
+
+        <p>Parole:
+
+            <input type="password" name="parole" placeholder="Ievadi paroli" minlength="8" maxlength="25" required> <!-- min/max length:  minimālias un maximums, ko var ievadit -->
+
+        </p>
+        <p>E-pasts
+            <input type="email" name="E-pasts" autocomplete="off"> <!-- ja name vieta ieleik "email", nevis "e-pasts", tad metisies ari ieprieks izmantoti epsati  ;  autocomplete:  ja pat ir "email" definets, automatiski neizpildis, bet var auto izpildit, ja ir "on" ieliekts-->
+
+        </p>
+
+        <p>Dzimums:
+            <input type="radio" name="dzimums" value="v"> Vīrietis <!-- šijos gadījumos "value" ir priekš datubāzes, lai viņai būtu dati, jo vīrieti/ sieviete mēs tikai redzam -->
+            <input type="radio" name="dzimums" value="s"> Sieviete
+        </p>
+
+        <p>Dzimšanas datums:
+
+            <input type="date" name="Dzimšanas datums" >
+
+        </p>
+
+        <p>Mīļākā krāsa:
+
+            <input type="color" name="Krāsa" value="#ffffff">  <!-- value: var pateikt default krāsu, izmantojot hexa -->
+
+        </p>
+
+        <p>Svars:
+
+            <input type="number" name="Svars" value="50" min="20" max="165" step="10"> <!-- step: var mainīt to, cik soļus iet uz priekšu -->
+
+        </p>
+
+        <p>Liepājas pilsētas daļa:
+
+            <select name="pilsēta">
+                <option value="" hidden>Izvēlēties</option>   <!-- hidden: var izadrīt tā, ka kollonā rādīsies "izvēlēties", bet viņu nevar izvēlēties -->
+                <option value="ce">Centrs</option>
+                <option value="ez">Ezerkrasts</option>
+                <option value="la">Lauma</option>
+                <option value="ka">Karosta</option>
+            </select>
+        </p>
+
+        <p>Labākā operētājsistēma:
+            <input list="os">
+            <datalist id="os">
+                <option value="Windows XP">Micrasoft</option>
+                <option value="Windows 7"></option>
+                <option value="Windows 11"></option>
+                <option value="Linux Ubuntu"></option>
+                <option value="Mac OS"></option>
+            </datalist>
+        </p>
+
+        <p>Tavs attēls:
+
+            <input type="file" name="attels" >
+        </p>
+
+        <p>Es labi pārzinu šādas valodas:
+            <input type="checkbox" name="valodas" value="html">HTML
+            <input type="checkbox" name="valodas" value="css">CSS
+            <input type="checkbox" name="valodas" value="sql">SQL
+            <input type="checkbox" name="valodas" value="java">Java
+            <input type="checkbox" name="valodas" value="c++">  C++
+        </p>
+
+        <p>Papildus komentāri: <br>
+            <textarea name="komeari" cols="40" rows="4" placeholder="Ieraksti, ja vēlies kautko papildus pateikt..."></textarea>  <!-- textarea: vieta, kur ierakstit tekstu -->
+        </p>
+        <input type="submit" value="Iesniegt informāciju">
+        <input type="reset" value="Notīrīt">
+    </fieldset>
+    </form>
+</body>
+</html>    

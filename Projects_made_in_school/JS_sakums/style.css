@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+    --burtuKrasa: #333
+}
+
+body{
+    background-color: #ccc;
+    color: var(--burtuKrasa);
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #444;
+    margin: 1px 0;
+}

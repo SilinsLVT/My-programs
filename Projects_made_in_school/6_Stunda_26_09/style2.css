@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;  /* šādi var commentot cssa */
+}
+
+nav{
+    background-color: #024280;
+    padding: 30px;
+}
+
+nav ul{ 
+    text-align: center;
+    margin: 0 auto;   /* nocentre visu */
+}
+
+nav ul li{
+    background-color: #ffffff; /* var rakstit "#ffffff" vai ari "#fff", jo ja visi cipari/burti ir vienadi, bus tads pats rezultats */
+    border-radius: 4px;
+    color: #333; /* teksta krasa */
+    margin: 5px;
+    padding: 10px;
+    list-style: none; /* nonem punktus no sana */
+    display: inline; /* parmaina no default bloka, uz inlainu */
+
+}
+
+nav ul li:hover{ /* hover kad "hovero" virs pogas */
+background-color: #333;
+color: white;
+}
+
+header{
+   /* background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat; */  
+    /* Šīs četras rindas dara to pašu, ko šī viena rinda */
+    background: url("images/bg.jpg") center 100% no-repeat; 
+    width: 100%;
+    height: 80vh;
+}
+
+main{
+    background-color: rgb(205, 226, 254);
+    padding: 2rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+h1{
+    background-color: #024280;
+    color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 2.5rem;          /* 1 rem atbilst 16 pikseļiem */
+    text-align: center;
+}
+
+article{
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 200px;  /*  visi article nebūs mazāki par 200px */
+}
+
+article h2{
+    color: #024280;
+    margin-bottom: 10px;
+}
+
+article p{
+    text-align: justify;
+}
+
+article img{
+    float: left;
+    height: 200px;
+    width: 210px;
+    transition: transform 1s ease-in-out;
+}
+
+footer{
+    background-color: #024280;
+    padding: 2rem;
+    color: #ffffff;
+    text-align: center;
+}

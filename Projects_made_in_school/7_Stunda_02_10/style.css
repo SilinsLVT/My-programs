@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box; /* norāda box sisizng uz visa  */
+}
+
+body{
+    background-color: #999;
+}
+
+#kaste1{
+    background-color: darkred;
+    color: #fff;
+    box-sizing: border-box; /* ar šo panāk, ka padding border, un marigin tiek iereikināts "width" mainīgajā === lai gan kopuma ir variāk kā 501px, viņš to vienmēr liks uz 501px */
+    width: 501px;
+    padding: 30px 15px; /* pirmais px nem augsu\apaksu, otrais sanus */
+    border: 3px solid #331;
+    margin: 0 0 10px 0; /* uztaisa atstarpi starp kastem */
+}
+
+#kaste2{
+    background-color: darkgreen;
+    box-sizing: border-box;
+    color: #fff;
+    width: 501px;
+    margin: 16px 24px; /* panem pedejo margin, lai gan pirmit jau defineja 10px gapu */
+    max-height: 300px;
+    overflow: auto;  /*lai gan teksts ir lielāks par 300px augstumu, šis overflow sadala tekstu*/
+}

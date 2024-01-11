@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Iestata skatapunktu, lai pārlūks automātiski to pielāgotu dažādiem ekrāna izmēriem-->
+    <title>HTML tabulas</title>
+</head>
+<body style="font-family: Calibri;">
+    <h1 style="text-align: center;">HTML tabulas</h1>
+    <hr>
+    <p style="text-align: center;"><a href="index.html">Sadaļa par saitēm</a> | <a href="atteli.html">Sadaļa par attēliem</a></p>
+    <hr>
+    <h2>3PT-1 audzēkņu mīļākie mācību priekšmeti!</h2>
+    <table border="1"> <!-- border uztaisa to, lai būtu tabulai forma(malas) -->
+        <tr>
+            <th><strong>Vārds</strong></th>
+            <th>Uzvārds</th>
+            <th>Mīļākais mācīu priekšmets</th>
+        </tr>
+        <tr>
+            <td><del>Lukass</del></td>
+            <td> Siliņš</td>
+            <td>Matemātika</td>
+        </tr>
+        <tr>
+            <td>Jānis</td>
+            <td>Bērziņš</td>
+            <td>Matemātika</td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>Marija</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Ivo</td>
+            <td>Šipenieks</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Ivars</td>
+            <td>Menģelis</td>
+            <td>Mājturība</td>
+        </tr>
+    </table>
+    <h2>Programmatūras izstrāde</h2>
+    <table border="1" bgcolor="Dark red" bordercolor="Black">
+        <tr>
+            <th width="400">Darbība</th>
+            <th width="200">Laiks</th>
+            <th width="200">Atbildīgais</th>
+        </tr>
+        <tr>
+            <td>Plānošana un prasību definēšana</td>
+            <td>Maijs</td>
+            <td>Kalniņš</td>
+        </tr>
+        <tr>
+            <td>Dizaina izstrāde</td>
+            <td>Maijs</td>
+            <td>Priedis</td>
+        </tr>
+        <tr>
+            <td>Projekta izstrāde</td>
+            <td>Jūlijs-Oktobris</td>
+            <td rowspan="3">Ozoliņš</td> <!-- to rowspan izmanto, ja atkartojas atributs -->
+        </tr>
+        <tr>
+            <td>Projekta testēšana</td>
+            <td>Novembris</td>
+            
+        </tr>
+        <tr>
+            <td>Projekta pārsktas un uzraudzība</td>
+            <td>Decembris</td>
+            
+        </tr>
+    </table>
+    <hr>
+    <p style="text-align: center;"> Lukass Gabriels Silņš &copy; 2023</p>
+</body>
+</html>

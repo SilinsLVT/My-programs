@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+h1{
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background-color: #f7921f;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.btn1{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background-color: #f7921f;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 57rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.btn:hover{
+    background: #444;
+}
+
+u{
+    text-decoration-color: #f18e21;
+}
+
+#vietas .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#vietas .box-container .box{
+    background-color: #fff;
+    border: .1rem solid rgba(0,0,0,0.1);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    width: 22rem;
+    border: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.augsa1{
+    position: absolute;
+      top: 26px;
+      left: 25px;
+      color: #eeeeee;
+      background-color: rgba(000, 000, 000, 0.6);
+      padding: 7px 9px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+.augsa1 i{
+    color: #f18e21;
+    padding-right: 7px;
+    padding-left: 2px;
+}
+
+.augsa2{
+    position: absolute;
+      top: 26px;
+      left: 25px;
+      color: #eeeeee;
+      background-color: rgba(000, 000, 000, 0.6);
+      padding: 7px 9px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+.augsa2 i{
+    color: #f18e21;
+    padding-right: 7px;
+    padding-left: 2px;
+} 
+
+.augsa3{
+    position: absolute;
+      top: 26px;
+      left: 25px;
+      color: #eeeeee;
+      background-color: rgba(000, 000, 000, 0.6);
+      padding: 7px 9px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+.augsa3 i{
+    color: #f18e21;
+    padding-right: 7px;
+    padding-left: 2px;
+} 
+
+.augsa4{
+    position: absolute;
+      top: 26px;
+      left: 25px;
+      color: #eeeeee;
+      background-color: rgba(000, 000, 000, 0.6);
+      padding: 7px 9px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+.augsa4 i{
+    color: #f18e21;
+    padding-right: 7px;
+    padding-left: 2px;
+}  
+
+#vietas .box-container .box:hover{
+    transform: translateY(-1rem);
+}
+
+#vietas .box-container .box img{
+    width:  20rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+}
+
+#vietas .box-container .box h3{
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem 0;
+    text-align: left;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#vietas .box-container .box p{
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+
+
+#sazinies .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sazinies .box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#zina {
+    grid-column: span 2;
+    width: 915px;
+    padding-bottom: 140px;
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+
+    #zina {
+        width: 100%;
+        grid-column: span 1;
+        padding-bottom: 10px;
+        padding-left: 8px;
+    }
+}
